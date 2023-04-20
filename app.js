@@ -18,6 +18,7 @@ db.once("open",()=>{
 
 require('./routes/user.routes')(app);
 require('./routes/poll.routes')(app)
+require('./routes/response.routes')(app);
 
 app.listen(7500,()=>{
     console.log("Server started is this port number: ", 7500)
